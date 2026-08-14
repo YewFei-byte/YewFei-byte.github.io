@@ -416,6 +416,68 @@ button:focus-visible{
 }
 
 /* ---------------------------------------------------------
+   Skills
+--------------------------------------------------------- */
+.skills{ padding: 8px 24px 56px; position: relative; z-index: 1; }
+.skills-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.skills-col-title{
+  font-size: 0.85rem;
+  color: var(--ink-faint);
+  text-transform: lowercase;
+  letter-spacing: 0.03em;
+  margin: 0 0 16px;
+}
+.skill-meter-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.skill-row{
+  display: grid;
+  grid-template-columns: minmax(0,1fr) 96px 34px;
+  align-items: center;
+  gap: 12px;
+}
+.skill-name{ font-size: 0.92rem; color: var(--ink); }
+.skill-meter{
+  display: block;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--line);
+  overflow: hidden;
+}
+.skill-meter-fill{
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: var(--green);
+  width: calc(var(--fill, 0) * 20%);
+  transition: width .2s ease;
+}
+.skill-row[data-level="1"] .skill-meter-fill{ --fill: 1; background: var(--amber); }
+.skill-row[data-level="2"] .skill-meter-fill{ --fill: 2; background: var(--amber); }
+.skill-row[data-level="3"] .skill-meter-fill{ --fill: 3; }
+.skill-row[data-level="4"] .skill-meter-fill{ --fill: 4; }
+.skill-row[data-level="5"] .skill-meter-fill{ --fill: 5; }
+.skill-level-label{
+  color: var(--ink-faint);
+  font-size: 0.78rem;
+  text-align: right;
+}
+
+@media (max-width: 720px){
+  .skills-grid{ grid-template-columns: 1fr; gap: 32px; }
+  .skill-row{ grid-template-columns: minmax(0,1fr) 72px 30px; gap: 8px; }
+}
+
+/* ---------------------------------------------------------
    Git log / timeline (signature element)
 --------------------------------------------------------- */
 .log-section{
@@ -572,6 +634,115 @@ button:focus-visible{
   padding: 3px 9px;
   border-radius: 999px;
 }
+
+/* ---------------------------------------------------------
+   Work experience
+--------------------------------------------------------- */
+.experience{ padding: 8px 24px 72px; position: relative; z-index: 1; }
+.experience-list{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.experience-card{
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 24px;
+  transition: border-color .15s ease, transform .15s ease;
+}
+.experience-card:hover{ border-color: var(--line-strong); transform: translateY(-2px); }
+.experience-card-top{
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.experience-date{ color: var(--ink-faint); font-size: 0.78rem; }
+.experience-card h3{ font-size: 1.05rem; }
+.experience-card p{ color: var(--ink-soft); font-size: 0.92rem; margin: 0 0 12px; }
+.experience-card ul:not(.tag-list){ color: var(--ink-soft); font-size: 0.92rem; margin: 0 0 14px; padding-left: 18px; }
+.experience-card ul:not(.tag-list) li{ margin: 4px 0; }
+
+/* ---------------------------------------------------------
+   Gallery / carousel
+--------------------------------------------------------- */
+.gallery{ padding: 8px 24px 72px; position: relative; z-index: 1; }
+.carousel{
+  position: relative;
+  max-width: 640px;
+  margin: 0 auto;
+}
+.carousel-track-wrap{
+  overflow: hidden;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+.carousel-track{
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  touch-action: pan-y;
+  transition: transform .35s ease;
+}
+.carousel-slide{
+  flex: 0 0 100%;
+  aspect-ratio: 4 / 3;
+}
+.carousel-slide img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  -webkit-user-drag: none;
+  user-select: none;
+}
+.carousel-arrow{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: var(--surface);
+  color: var(--ink);
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background .15s ease, transform .15s ease;
+}
+.carousel-arrow:hover{ background: var(--green-soft); transform: translateY(-50%) scale(1.05); }
+.carousel-arrow--prev{ left: -20px; }
+.carousel-arrow--next{ right: -20px; }
+@media (max-width: 700px){
+  .carousel-arrow--prev{ left: 8px; }
+  .carousel-arrow--next{ right: 8px; }
+}
+
+.carousel-dots{
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+.carousel-dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  border: none;
+  padding: 0;
+  background: var(--line-strong);
+  cursor: pointer;
+  transition: background .15s ease, transform .15s ease;
+}
+.carousel-dot.is-active{ background: var(--green); transform: scale(1.2); }
 
 /* ---------------------------------------------------------
    Contact
