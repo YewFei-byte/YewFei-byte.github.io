@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Lam Yew Fei — Software Engineering Student</title>
+<meta name="description" content="Lam Yew Fei is a Software Engineering student at APU, building quiz platforms, LMS tools, and assessment systems while learning Python, Java, and web development." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo" aria-label="Lam Yew Fei — home">
+      <span class="logo-mark">LYF</span><span class="logo-cursor" aria-hidden="true">_</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary">
+      <a href="#about">about</a>
+      <a href="#work">log</a>
+      <a href="#projects">projects</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <a class="resume-link" href="Lam_Yew_Fei_Resume.pdf" download>résumé ↓</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero wrap">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow mono">// software engineering · year 2 · apu</p>
+        <h1 class="hero-title">
+          Building things,<br>
+          one node at a time.
+        </h1>
+        <p class="hero-sub">
+          I'm Yew Fei, a Software Engineering student who likes turning
+          coursework into real, working software — from linked-list data
+          engines in C++ to full-stack web apps with Node.js and MySQL.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">See the work</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+        <ul class="social-row" aria-label="Social links">
+          <li><a href="https://github.com/YewFei-byte" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/lam-yew-fei-97480436a" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="mailto:yewfeilam2005@gmail.com">Email</a></li>
+          <li><a href="https://wa.me/qr/SNLX2IR6QT7MM1" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+      <div class="hero-cube-stage" aria-hidden="true">
+        <div class="cube-scene">
+          <div class="cube">
+            <div class="cube-face cube-face--front"><span>&lt;/&gt;</span></div>
+            <div class="cube-face cube-face--back"><span>{ }</span></div>
+            <div class="cube-face cube-face--right"><span>SQL</span></div>
+            <div class="cube-face cube-face--left"><span>JS</span></div>
+            <div class="cube-face cube-face--top"><span>C++</span></div>
+            <div class="cube-face cube-face--bottom"><span>PHP</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT / SKILLS -->
+  <section id="about" class="about wrap">
+    <div class="section-head">
+      <span class="mono section-num">about</span>
+      <h2>About Me</h2>
+      <p class="section-note">A quick summary of where I'm at, academically and otherwise.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-main">
+        <img class="about-photo" src="assets/profile.jpg" alt="Portrait of Lam Yew Fei" width="160" height="160">
+        <p class="about-copy">
+          I'm a Bachelor of Science (Hons) in Software Engineering student at
+          Asia Pacific University of Technology and Innovation, after
+          finishing a Diploma in Information &amp; Communication Technology.
+          Most of my coursework lands somewhere between
+          "build a working system" and "explain why it's built that way" —
+          quiz platforms, role-based systems, data structures, software
+          architecture and testing. Outside class, I've worked on the research
+          side of a fintech team, cleaning and analysing broker data in Python
+          and Excel.
+        </p>
+        <ul class="skill-tags" aria-label="Skills">
+          <li>Python</li>
+          <li>Java</li>
+          <li>C++</li>
+          <li>HTML/CSS</li>
+          <li>Node.js</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+          <li>RStudio</li>
+        </ul>
+      </div>
+
+      <ul class="stat-grid" aria-label="Quick stats">
+        <li class="stat-card">
+          <span class="stat-label mono">GPA</span>
+          <span class="stat-value stat-green">3.40<span class="stat-unit">/4.00</span></span>
+          <span class="stat-note">Software Engineering (Hons)</span>
+        </li>
+        <li class="stat-card">
+          <span class="stat-label mono">diploma gpa</span>
+          <span class="stat-value stat-amber">2.89<span class="stat-unit">/4.00</span></span>
+          <span class="stat-note">Info &amp; Communication Tech</span>
+        </li>
+        <li class="stat-card">
+          <span class="stat-label mono">programme</span>
+          <span class="stat-value stat-green stat-value--text">B.Sc. Software Engineering</span>
+        </li>
+        <li class="stat-card">
+          <span class="stat-label mono">projects shipped</span>
+          <span class="stat-value stat-amber">4+</span>
+          <span class="stat-note">see the log below</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- TIMELINE / GIT LOG -->
+  <section id="work" class="log-section">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="mono section-num">log</span>
+        <h2>Commit history</h2>
+        <p class="section-note">
+          Work and projects, most recent first — read it like a git log.
+          <span class="legend">
+            <span class="legend-item"><span class="dot dot-project" aria-hidden="true"></span>project</span>
+            <span class="legend-item"><span class="dot dot-work" aria-hidden="true"></span>work</span>
+          </span>
+        </p>
+      </div>
+
+      <ol class="git-log" id="gitLog">
+
+        <li class="log-entry" data-type="project">
+          <button class="log-node" aria-expanded="false">
+            <span class="dot dot-project"></span>
+            <span class="log-meta">
+              <span class="log-date mono">spring 2026</span>
+              <span class="log-title">Assessment Feedback System</span>
+            </span>
+            <span class="log-chevron" aria-hidden="true">＋</span>
+          </button>
+          <div class="log-body">
+            <p>Java-based system for closing the loop between assessments and feedback, with role-based access for administrators, academic leaders, lecturers, and students.</p>
+            <ul>
+              <li>Designed and implemented full CRUD operations across four distinct user roles</li>
+              <li>Modelled role-based access control from the ground up in Java</li>
+            </ul>
+            <p class="log-tags mono">java</p>
+          </div>
+        </li>
+
+        <li class="log-entry" data-type="work">
+          <button class="log-node" aria-expanded="false">
+            <span class="dot dot-work"></span>
+            <span class="log-meta">
+              <span class="log-date mono">jul – oct 2025</span>
+              <span class="log-title">TED Optimus — UI/UX Designer</span>
+            </span>
+            <span class="log-chevron" aria-hidden="true">＋</span>
+          </button>
+          <div class="log-body">
+            <p>Worked with the Research Team in a fintech setting, turning broker reports into usable market-trend data.</p>
+            <ul>
+              <li>Gathered and classified reports from multiple brokers for market trend analysis</li>
+              <li>Managed large volumes of financial data in Excel — formulas, PivotTables, shortcuts</li>
+              <li>Wrote and debugged Python scripts in Google Colab to simplify data gathering</li>
+              <li>Helped configure audio equipment for meetings and presentations</li>
+            </ul>
+            <p class="log-tags mono">python · excel · google colab</p>
+          </div>
+        </li>
+
+        <li class="log-entry" data-type="project">
+          <button class="log-node" aria-expanded="false">
+            <span class="dot dot-project"></span>
+            <span class="log-meta">
+              <span class="log-date mono">summer 2025</span>
+              <span class="log-title">DQuiz</span>
+            </span>
+            <span class="log-chevron" aria-hidden="true">＋</span>
+          </button>
+          <div class="log-body">
+            <p>A gamified Learning Management System built with a team — quizzes with a currency, avatar, and reward layer on top, so studying doubles as a game.</p>
+            <ul>
+              <li>Contributed to system analysis, UI/UX design, documentation, and feature development</li>
+              <li>Built out student-facing features: daily quizzes, challenges, scoreboard, avatar store</li>
+              <li>Built staff-facing tools: module management, feedback reports, progress tracking</li>
+            </ul>
+            <p class="log-tags mono">php · mysql</p>
+          </div>
+        </li>
+
+        <li class="log-entry" data-type="project">
+          <button class="log-node" aria-expanded="false">
+            <span class="dot dot-project"></span>
+            <span class="log-meta">
+              <span class="log-date mono">winter 2024</span>
+              <span class="log-title">ThinkZap</span>
+            </span>
+            <span class="log-chevron" aria-hidden="true">＋</span>
+          </button>
+          <div class="log-body">
+            <p>An online quiz platform for students and lecturers, built as a group project.</p>
+            <ul>
+              <li>Developed with Microsoft Visual Studio, PHP, and MySQL</li>
+              <li>Debugged a recurring <code>mysqli_prepare()</code> failure in the query layer</li>
+              <li>Designed a settings interface covering profile, security, appearance, and quiz history panels</li>
+            </ul>
+            <p class="log-tags mono">html · php · mysql</p>
+          </div>
+        </li>
+
+        <li class="log-entry" data-type="project">
+          <button class="log-node" aria-expanded="false">
+            <span class="dot dot-project"></span>
+            <span class="log-meta">
+              <span class="log-date mono">coursework</span>
+              <span class="log-title">Student Record Management System</span>
+            </span>
+            <span class="log-chevron" aria-hidden="true">＋</span>
+          </button>
+          <div class="log-body">
+            <p>A system for storing and managing student records.</p>
+            <ul>
+              <li>Details on stack and specific features — drop them in here</li>
+            </ul>
+            <p class="log-tags mono">edit me</p>
+          </div>
+        </li>
+
+        <li class="log-entry" data-type="work">
+          <button class="log-node" aria-expanded="false">
+            <span class="dot dot-work"></span>
+            <span class="log-meta">
+              <span class="log-date mono">feb – jul 2023</span>
+              <span class="log-title">Fei Fan Hotpot — Service Crew</span>
+            </span>
+            <span class="log-chevron" aria-hidden="true">＋</span>
+          </button>
+          <div class="log-body">
+            <p>Front-of-house work in a fast-paced restaurant — the job that teaches you to stay calm under load, long before any codebase does.</p>
+            <ul>
+              <li>Provided efficient, friendly customer service during peak hours</li>
+              <li>Maintained kitchen and personal hygiene standards for food safety</li>
+              <li>Resolved customer inquiries and issues professionally</li>
+            </ul>
+          </div>
+        </li>
+
+      </ol>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects wrap">
+    <div class="section-head">
+      <span class="mono section-num">projects</span>
+      <h2>A closer look</h2>
+    </div>
+
+    <div class="project-grid">
+
+      <article class="project-card">
+        <div class="project-card-top">
+          <span class="mono project-date">spring 2026</span>
+          <h3>Assessment Feedback System</h3>
+        </div>
+        <p>Role-based feedback and assessment tracking for administrators, academic leaders, lecturers, and students, with full CRUD per role.</p>
+        <ul class="tag-list mono">
+          <li>Java</li>
+          <li>RBAC</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card-top">
+          <span class="mono project-date">summer 2025</span>
+          <h3>DQuiz</h3>
+        </div>
+        <p>A gamified LMS with avatars, an in-app currency and store, daily quizzes, and challenges — group project, contributed across analysis, design, and build.</p>
+        <ul class="tag-list mono">
+          <li>PHP</li>
+          <li>MySQL</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card-top">
+          <span class="mono project-date">winter 2024</span>
+          <h3>ThinkZap</h3>
+        </div>
+        <p>An online quiz platform for students and lecturers with a full account settings suite — profile, security, appearance, and quiz history.</p>
+        <ul class="tag-list mono">
+          <li>PHP</li>
+          <li>MySQL</li>
+        </ul>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card-top">
+          <span class="mono project-date">coursework</span>
+          <h3>Student Record Management System</h3>
+        </div>
+        <p class="placeholder-copy">Short description goes here — what it manages, and how.</p>
+        <ul class="tag-list mono">
+          <li>edit me</li>
+        </ul>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact wrap">
+    <div class="section-head">
+      <span class="mono section-num">contact</span>
+      <h2>Let's talk</h2>
+    </div>
+    <p class="contact-copy">
+      Open to opportunities. Reach out any of these ways:
+    </p>
+    <ul class="contact-list">
+      <li>
+        <span class="contact-label mono">email</span>
+        <a href="mailto:yewfeilam2005@gmail.com">yewfeilam2005@gmail.com</a>
+      </li>
+      <li>
+        <span class="contact-label mono">github</span>
+        <a href="https://github.com/YewFei-byte" target="_blank" rel="noopener">github.com/YewFei-byte</a>
+      </li>
+      <li>
+        <span class="contact-label mono">linkedin</span>
+        <a href="https://www.linkedin.com/in/lam-yew-fei-97480436a" target="_blank" rel="noopener">lam-yew-fei-97480436a</a>
+      </li>
+      <li>
+        <span class="contact-label mono">whatsapp</span>
+        <a href="https://wa.me/qr/SNLX2IR6QT7MM1" target="_blank" rel="noopener">wa.me/qr/SNLX2IR6QT7MM1</a>
+      </li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p class="mono">built with html · css · js — hosted on github pages</p>
+    <p class="mono">© Lam Yew Fei <span id="year"></span></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
