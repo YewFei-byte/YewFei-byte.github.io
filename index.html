@@ -35,58 +35,98 @@
 
   <!-- HERO -->
   <section class="hero wrap">
-    <p class="eyebrow mono">// software engineering · year 2 · apu</p>
-    <h1 class="hero-title">
-      Lam Yew&nbsp;Fei builds things that
-      <span class="hero-emph">check students' work</span>,
-      <span class="hero-emph">gamify learning</span>, and
-      <span class="hero-emph">keep records straight</span>.
-    </h1>
-    <p class="hero-sub">
-      A Software Engineering student who's comfortable across the stack —
-      Python for automation and data handling, Java and PHP for the systems
-      that run underneath, and enough front-end to make it usable.
-      Currently looking for a 4-month internship, Sep 2026 – Jan 2027.
-    </p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="#projects">See the work</a>
-      <a class="btn btn-ghost" href="#contact">Get in touch</a>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow mono">// software engineering · year 2 · apu</p>
+        <h1 class="hero-title">
+          Building things,<br>
+          one node at a time.
+        </h1>
+        <p class="hero-sub">
+          I'm Yew Fei, a Software Engineering student who likes turning
+          coursework into real, working software — from linked-list data
+          engines in C++ to full-stack web apps with Node.js and MySQL.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">See the work</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+        <ul class="social-row" aria-label="Social links">
+          <li><a href="https://github.com/YewFei-byte" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/lam-yew-fei-97480436a" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="mailto:yewfeilam2005@gmail.com">Email</a></li>
+          <li><a href="https://wa.me/qr/SNLX2IR6QT7MM1" target="_blank" rel="noopener">WhatsApp</a></li>
+        </ul>
+      </div>
+      <div class="hero-cube-stage" aria-hidden="true">
+        <div class="cube-scene">
+          <div class="cube">
+            <div class="cube-face cube-face--front"><span>&lt;/&gt;</span></div>
+            <div class="cube-face cube-face--back"><span>{ }</span></div>
+            <div class="cube-face cube-face--right"><span>SQL</span></div>
+            <div class="cube-face cube-face--left"><span>JS</span></div>
+            <div class="cube-face cube-face--top"><span>C++</span></div>
+            <div class="cube-face cube-face--bottom"><span>PHP</span></div>
+          </div>
+        </div>
+      </div>
     </div>
-    <ul class="social-row" aria-label="Social links">
-      <li><a href="https://github.com/YewFei-byte" target="_blank" rel="noopener">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/lam-yew-fei-97480436a" target="_blank" rel="noopener">LinkedIn</a></li>
-      <li><a href="mailto:yewfeilam2005@gmail.com">Email</a></li>
-      <li><a href="https://wa.me/qr/SNLX2IR6QT7MM1" target="_blank" rel="noopener">WhatsApp</a></li>
-    </ul>
   </section>
 
   <!-- ABOUT / SKILLS -->
   <section id="about" class="about wrap">
     <div class="section-head">
       <span class="mono section-num">about</span>
-      <h2>What I work with</h2>
+      <h2>About Me</h2>
+      <p class="section-note">A quick summary of where I'm at, academically and otherwise.</p>
     </div>
+
     <div class="about-grid">
-      <p class="about-copy">
-        I'm a Bachelor of Science (Hons) in Software Engineering student at
-        Asia Pacific University of Technology and Innovation, holding a 3.4
-        GPA, after finishing a Diploma in Information &amp; Communication
-        Technology. Most of my coursework lands somewhere between
-        "build a working system" and "explain why it's built that way" —
-        quiz platforms, role-based systems, data structures, software
-        architecture and testing. Outside class, I've worked on the research
-        side of a fintech team, cleaning and analysing broker data in Python
-        and Excel.
-      </p>
-      <ul class="skill-tags" aria-label="Skills">
-        <li>Python</li>
-        <li>Java</li>
-        <li>C++</li>
-        <li>HTML/CSS</li>
-        <li>Node.js</li>
-        <li>PHP</li>
-        <li>MySQL</li>
-        <li>RStudio</li>
+      <div class="about-main">
+        <img class="about-photo" src="assets/profile.jpg" alt="Portrait of Lam Yew Fei" width="160" height="160">
+        <p class="about-copy">
+          I'm a Bachelor of Science (Hons) in Software Engineering student at
+          Asia Pacific University of Technology and Innovation, after
+          finishing a Diploma in Information &amp; Communication Technology.
+          Most of my coursework lands somewhere between
+          "build a working system" and "explain why it's built that way" —
+          quiz platforms, role-based systems, data structures, software
+          architecture and testing. Outside class, I've worked on the research
+          side of a fintech team, cleaning and analysing broker data in Python
+          and Excel.
+        </p>
+        <ul class="skill-tags" aria-label="Skills">
+          <li>Python</li>
+          <li>Java</li>
+          <li>C++</li>
+          <li>HTML/CSS</li>
+          <li>Node.js</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+          <li>RStudio</li>
+        </ul>
+      </div>
+
+      <ul class="stat-grid" aria-label="Quick stats">
+        <li class="stat-card">
+          <span class="stat-label mono">GPA</span>
+          <span class="stat-value stat-green">3.40<span class="stat-unit">/4.00</span></span>
+          <span class="stat-note">Software Engineering (Hons)</span>
+        </li>
+        <li class="stat-card">
+          <span class="stat-label mono">diploma gpa</span>
+          <span class="stat-value stat-amber">2.89<span class="stat-unit">/4.00</span></span>
+          <span class="stat-note">Info &amp; Communication Tech</span>
+        </li>
+        <li class="stat-card">
+          <span class="stat-label mono">programme</span>
+          <span class="stat-value stat-green stat-value--text">B.Sc. Software Engineering</span>
+        </li>
+        <li class="stat-card">
+          <span class="stat-label mono">projects shipped</span>
+          <span class="stat-value stat-amber">4+</span>
+          <span class="stat-note">see the log below</span>
+        </li>
       </ul>
     </div>
   </section>
@@ -295,8 +335,7 @@
       <h2>Let's talk</h2>
     </div>
     <p class="contact-copy">
-      Open to internship opportunities, particularly from
-      <strong>24 September 2026 to 1 January 2027</strong>. Reach out any of these ways:
+      Open to opportunities. Reach out any of these ways:
     </p>
     <ul class="contact-list">
       <li>
